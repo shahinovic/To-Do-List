@@ -1,0 +1,111 @@
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --main-BG: hsl(217, 54%, 11%);
+    --card-BG: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--main-BG);
+    color: var(--Cyan);
+    font-family: 'Play', sans-serif;
+}
+
+.form {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid var(--Cyan);
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--card-BG);
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.input {
+    width: 80%;
+    background: inherit;
+    border: 1px solid var(--Cyan);
+    color: hsl(178, 100%, 50%);
+    padding: 5px;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.add {
+    background-color: hsl(178.1, 97.3%, 43.9%);
+    border: 1px solid var(--card-BG);
+    color: var(--card-BG);
+    padding: 5px 15px;
+    font-size: 1.1em;
+    transition: 0.3s linear;
+    cursor: pointer;
+}
+
+.add:hover {
+    background-color: cyan;
+}
+
+.tasks {
+    width: 90%;
+    margin: 0 auto;
+    background-color: var(--card-BG);
+    border: 1px solid cyan;
+    padding: 30px;
+    font-size: 1.5em;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.task {
+    border: 1px solid cyan;
+    background-color: #09101a;
+    padding: 20px;
+    color: cyan;
+    opacity: 0.7;
+    transition: 0.3s linear;
+    display: flex;
+    justify-content: space-between;
+}
+
+.task:hover {
+    opacity: 1;
+}
+
+.task:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.done {
+    background-color: var(--card-BG);
+    color: rgba(0, 255, 255, 0.582);
+    border-color: rgba(0, 255, 255, 0.582);
+}
+
+.del {
+    border: 1px solid rgb(185, 25, 60);
+    color: rgb(185, 25, 60);
+    background-color: black;
+    padding: 5px;
+    transition: 0.3s linear;
+    cursor: pointer;
+}
+
+.del:hover {
+    color: rgb(202, 14, 14);
+    border-color: rgb(202, 14, 14);
+}
